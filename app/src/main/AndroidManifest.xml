@@ -13,7 +13,10 @@
         android:theme="@style/Theme.MyAppTheme"
         tools:targetApi="31">
         <activity
-            android:name=".ProfilePageActivity"
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
             android:exported="false" />
         <activity
             android:name=".SendMoneyActivity"
@@ -22,19 +25,19 @@
             android:name=".RequestMoneyActivity"
             android:exported="false" />
         <activity
-            android:name=".HomeEmptyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".HomeActivity"
+            android:name=".LoginSignUpActivity"
             android:exported="false" />
         <activity
             android:name=".SignupActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginSignUpActivity"
+            android:name=".SplashActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".HomeEmptyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilePageActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

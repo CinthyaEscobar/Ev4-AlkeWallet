@@ -54,14 +54,15 @@
 
     <TextView
         android:id="@+id/already_hav"
-        android:layout_width="104dp"
-        android:layout_height="21dp"
+        android:layout_width="160dp"
+        android:layout_height="23dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:fontFamily="sans-serif-black"
         android:gravity="center_horizontal|top"
         android:lineSpacingExtra="4sp"
         android:text="@string/ya_tiene_cuenta"
-        android:textColorLink="@color/link_text"
+        android:textColor="@color/link_text"
         android:translationY="-1.75sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

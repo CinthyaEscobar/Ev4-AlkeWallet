@@ -29,13 +29,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.196"
-        tools:srcCompat="@drawable/foto_perfil" />
+        app:srcCompat="@drawable/foto_perfil" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/inicio"
+        android:fontFamily="sans-serif-black"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView5"
@@ -62,11 +63,16 @@
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="76dp"
+        android:fontFamily="sans-serif-black"
         android:text="@string/balance_total"
         android:textColor="@color/white"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="155dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/some_id"
@@ -75,7 +81,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
         android:gravity="top"
         android:lineSpacingExtra="-10sp"
         android:text="@string/money"
@@ -83,7 +89,7 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintHorizontal_bias="0.145"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
@@ -103,8 +109,8 @@
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="@color/secondary"
         android:drawableLeft="@drawable/send_icon"
         android:text="@string/enviar_dinero"
@@ -115,11 +121,11 @@
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="24dp"
         android:drawableLeft="@drawable/request_icon"
         android:text="@string/ingresar_dinero"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintHorizontal_bias="0.578"
         app:layout_constraintStart_toEndOf="@+id/button4"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
@@ -129,6 +135,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="@string/ultimas_transacciones"
+        android:fontFamily="sans-serif-black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintStart_toStartOf="parent"
@@ -137,10 +144,10 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="348dp"
-        android:layout_marginTop="20dp"
-        tools:listitem="@layout/item_layout"
-        app:layout_constraintTop_toBottomOf="@+id/textView14"
-        tools:layout_editor_absoluteX="1dp" />
+        android:layout_marginTop="116dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        tools:layout_editor_absoluteX="4dp"
+        tools:listitem="@layout/item_layout" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

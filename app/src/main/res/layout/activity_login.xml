@@ -11,14 +11,16 @@
 
     <TextView
         android:id="@+id/login_and_s"
-        android:layout_width="292dp"
-        android:layout_height="53dp"
+        android:layout_width="293dp"
+        android:layout_height="79dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="44dp"
+        android:fontFamily="sans-serif-black"
         android:gravity="top"
         android:lineSpacingExtra="12sp"
         android:text="@string/login_and_s"
+        android:textSize="24dp"
         android:translationY="-6sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -29,10 +31,12 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="96dp"
+        android:fontFamily="sans-serif-medium"
         android:text="@string/email_text"
-        app:layout_constraintTop_toBottomOf="@+id/login_and_s"
-        tools:layout_editor_absoluteX="30dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_and_s" />
 
     <EditText
         android:id="@+id/editTextText"
@@ -47,7 +51,7 @@
         android:paddingStart="30dp"
         android:paddingEnd="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.324"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -55,6 +59,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
         android:text="@string/pass_text"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
         app:layout_constraintEnd_toEndOf="parent"
@@ -83,8 +88,9 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
         android:text="@string/olvidaste_contrasena"
-        android:textColorLink="@color/link_text"
+        android:textColor="@color/link_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.814"
@@ -109,6 +115,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/crear_una_nueva"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/link_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
